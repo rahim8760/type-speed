@@ -63,8 +63,8 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
-  left: 10%;
+  top: 45%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -142,9 +142,10 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .card {
@@ -152,6 +153,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -188,5 +190,10 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
