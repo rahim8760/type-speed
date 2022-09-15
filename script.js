@@ -7,7 +7,7 @@ const modalBackground = document.getElementById("modal-background");
 
 // variables
 let userText = "";
-let errorCount= [0];
+let errorCount= 0;
 let startTime;
 let questionText = "";
 
@@ -109,6 +109,7 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
+    // tepmlite string
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
