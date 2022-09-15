@@ -100,7 +100,6 @@ const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
 };
-
 const start = () => {
   // If already started, do not start again
   if (startTime) return;
